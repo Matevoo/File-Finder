@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <limits.h>
+#include <stdatomic.h>
 #include "include/c11threads.h"
 
 #ifndef PATH_MAX
@@ -15,7 +16,9 @@
 #endif
 
 #define MAX_THREADS 8
+#define LIMIT 20
 
+// COLORS:
 #define GREEN "32"
 
 #endif
